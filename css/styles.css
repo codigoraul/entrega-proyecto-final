@@ -137,9 +137,15 @@ ul {
   .gris{
     background-color: #ebebec;
   }
-  .seccion.celesteclaro {
-    background-color: #e7fdff;
+  .seccion.bgGradiente {
+    background: linear-gradient(to right, #3F87AC, #00396a);
     padding-top: 4rem;
+  }
+  .bgGradiente h2, .bgGradiente h3{
+    color: #fff;
+  }
+  .bgGradiente img {
+    box-shadow: 2px 2px 5px -2px #000;
   }
   .caja-2.slider {
     display: flex;
@@ -268,6 +274,10 @@ ul {
   }
   .portafolio .caja-2 img {
     width: 100%;border: 3px solid #ffffff8a;
+  }
+  .portafolio img:hover{
+    transform: scale(1.1);
+    transition: all .4s
   }
   @media (max-width: 768px) { 
     .portafolio.container {
