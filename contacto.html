@@ -1,60 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<head> <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">
-               <a href="index.html"> <img src="img/logo-disenopaginas.svg" width="178px" height="auto" alt="Logotipo"></a>
-            </div>
-            <ul class="menu" id="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="blog.html">Blog</a></li> 
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <div class="menu-bar" id="menu-bar">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>  
-    <div class="title gris">
-        <div class="container">
-             <h1>Contacto</h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"> <img src="img/logo-disenopaginas.svg" width="178px" height="auto" alt="Logotipo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="portafolio.html">Portafolio</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <section class="gris">
+        <div class="container title">
+             <h3>Contacto</h3>
         </div>
-    </div> 
-    <div class="main contacto">
-        <div class="doscolumnas container">
-            <div class="caja-2">
-        
+    </section> 
+    <main class="main contacto">
+        <div class="container mb-5 mt-5">
+         
+            <div class="row">
+              <div class="col-md-6">
                 <h2>Formulario de contacto</h2>
                 <form action="" method="get" enctype="multipart/form-data">
-                    <div><label for="nombre" class="">Nombre:</label>
-                    <input type="text" name="nombre" id ="nombre" placeholder="Tu Nombre">
-                    <label for="email" class="">Email:</label> 
-                    <input type="email" name="" placeholder="Tu Email" id ="email"></div>
-                    <div>
-                    <label for="fono" class="">Fono:</label>
-                     <input type="tel" placeholder="Fono" name="" id ="fono">
-                    </div>
-                     <label for="mensaje" class="">Mensaje:</label>
-                     <div>
-                    <textarea  name="" id="mensaje" cols="30" rows="10">Su mensaje
-                     
-                    </textarea></div>
-                    <input type="submit" value="Enviar formulario">
+                  <div><label for="nombre" class="">Nombre:</label>
+                  <input type="text" name="nombre" id ="nombre" placeholder="Tu Nombre">
+                  <label for="email" class="">Email:</label> 
+                  <input type="email" name="" placeholder="Tu Email" id ="email"></div>
+                  <div>
+                  <label for="fono" class="">Fono:</label>
+                   <input type="tel" placeholder="Fono" name="" id ="fono">
+                  </div>
+                   <label for="mensaje" class="">Mensaje:</label>
+                   <div>
+                  <textarea  name="" id="mensaje" cols="30" rows="10">Su mensaje
+                   
+                  </textarea></div>
+                  <input type="submit" value="Enviar formulario">
 
-             </form>
-            </div>
-            <div class="caja-2">
+                 </form>
+
+              </div>
+              <div class="col-md-6">
                 <h2>Datos de contacto</h2>
                 <div class="datos-contacto">
                     <p><span>Email:</span> contacto@misitioweb.cl</p>
@@ -66,43 +80,51 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6132.054218333838!2d-73.182152!3d-39.783947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf56add53b7674ee1!2zMznCsDQ3JzAyLjIiUyA3M8KwMTAnNTUuOCJX!5e0!3m2!1ses-419!2sus!4v1643317120565!5m2!1ses-419!2sus"
                      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+              </div>
+
+                
             </div>
         </div>
 
-    </div>
-    </div> <!-- main -->
-
+    </main> <!-- main -->
 
     <footer>
-        <div class="container footer">
-         <div class="columna-3">
-             <h4>Nosotros</h4>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolores 
-                 delectus quibusdam temporibus sunt maiores nesciunt placeat, nulla illum
-                  officia.</p>
-         </div>
-         <div class="columna-3">
-             <h4>Link relacionados</h4>
-             <ul class="lista-footer">
-                <li>www.ejemplo.cl</li>
-                <li>www.link2.cl</li>
-                <li>www.link3.cl</li>
-                <li>item</li>
-            </ul>
-         </div>
-         <div class="columna-3">
-             <h4>Datos de contacto</h4>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolores 
-                 delectus quibusdam temporibus sunt maiores nesciunt placeat, nulla illum
-                  officia.</p>
-           
+      <div class="container">
+          <div class="row">
+          <div class="col-sm-6 col-md-4">
+              <h4>Nosotros</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolores 
+                  delectus quibusdam temporibus sunt maiores nesciunt placeat, nulla illum
+                   officia.</p>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <h4>Link relacionados</h4>
+              <ul class="lista-footer">
+                 <li>www.ejemplo.cl</li>
+                 <li>www.link2.cl</li>
+                 <li>www.link3.cl</li>
+                 <li>item</li>
+             </ul>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <h4>Datos de contacto</h4>
+              <p><strong>Correo:</strong> contacto@paginas.cl</p>
+              <p><strong>Fono:</strong> 93939393</p>
+              <p><strong>Dirección:</strong> Concepción - Chile</p>
+          </div>
+       </div>
+      </div> <!--footer -->
+          
+          <p class="pie">Derechos reservados @2022</p>
+          </div>      
+  </footer>
+ 
+<script src="js/script.js"></script>  
+<script>
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-         </div>
-         </div> <!--footer -->
-         
-         <p class="pie">Derechos reservados @2022</p>
-        </div>
-    </footer>
-<script src="js/script.js"></script> 
+
 </body>
 </html>

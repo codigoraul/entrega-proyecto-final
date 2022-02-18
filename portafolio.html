@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,83 +14,100 @@
 </head>
 <body>
     <header>
-        <nav class="container">
-            <div class="logo">
-               <a href="index.html"> <img src="img/logo-disenopaginas.svg" width="178px" height="auto"  alt="Logotipo"></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+            <a class="navbar-brand" href="index.html"> <img src="img/logo-disenopaginas.svg" width="178px" height="auto" alt="Logotipo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portafolio.html">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
             </div>
-            <ul class="menu" id="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <div class="menu-bar" id="menu-bar">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
+        </nav> 
     </header>  
-    <div class="title gris">
-        <div class="container">
-             <h1>Portafolio de Trabajos</h1>
+    <section class="gris">
+        <div class="container title">
+             <h3>Portafolio</h3>
         </div>
-    </div> 
-    <div class="main contacto">
-        <div class="portafolio container">
-            <div class="caja-2 ">
+    </section> 
+    <main class="portafolio pt-5 pb-5 mb-5">
+        <div class="container text-center">
+            <h2>Nuestros Portafolio</h2>
+         </div>
+        <div class="container-fluid mb-5 mt-5">
+            <div class="row pt-2 pb-5">
+            <div class="col-sm-6 col-md-3 ">
                 <p>www.dentalmilenium.cl</p>
                 <a href="#">
               <img src="img/dentalmilenium-ch.jpg" alt="web dentista">
                </a>
-            </div> <!-- caja-2  -->
-            <div class="caja-2">
+            </div> <!-- col-sm-6 col-md-3  -->
+            <div class="col-sm-6 col-md-3">
                 <p>www.ejemplo.cl</p>
                 <a href="#">
                <img src="img/segurosCancino.jpg" alt="diseño web cancino9n ">
             </a>
             </div>
-            <div class="caja-2">
+            <div class="col-sm-6 col-md-3">
                 <p>www.ejemplo4.cl</p>
                 <a href="#">
                <img src="img/edyceconstrucciones.jpg" alt="web construcciones">
             </a>
                
             </div>
-            <div class="caja-2">
+            <div class="col-sm-6 col-md-3">
                 <p>www.ejemplo4.cl</p>
                 <a href="#">
-               <img src="img/btcf.jpg" width="300px" alt="diseño web seguros">
+               <img src="img/btcf.jpg"  alt="diseño web seguros">
             </a>
             </div>
-        </div>
-        <div class="portafolio container">
-            <div class="caja-2 ">
+        </div> <!-- row-->
+       <div class="row">
+            <div class="col-sm-6 col-md-3 ">
                 <p>www.dentalmilenium.cl</p>
                 <a href="#">
               <img src="img/hielos-sur.jpg" alt="hielos sur ">
             </a>
-            </div> <!-- caja-2  -->
-            <div class="caja-2">
+            </div> <!-- col-sm-6 col-md-3  -->
+            <div class="col-sm-6 col-md-3">
                 <p>www.ejemplo.cl</p>
                 <a href="#">
                <img src="img/endodonciatemuco.jpg" alt="diseño web cancino9n ">
             </a>
             </div>
-            <div class="caja-2">
+            <div class="col-sm-6 col-md-3">
                 <p>www.ejemplo4.cl</p>
                 <a href="#">
                <img src="img/machilawen.jpg" alt="web construcciones">
                 </a>
             </div>
-            <div class="caja-2">
+            <div class="col-sm-6 col-md-3">
                  <a href="#">
                 <p>www.ejemplo4.cl</p>
                 <a href="#">
-               <img src="img/serachile.jpg" width="300px" alt="diseño web seguros">
+               <img src="img/serachile.jpg" alt="diseño web seguros">
             </a>
             </div>
-        </div>
-    </div>      
+        </div> <!--row -->
+        </div> <!--container -->
+    </main>      
     <footer>
         <div class="container footer">
          <div class="columna-3">
@@ -116,5 +137,10 @@
         </div>
     </footer>
 <script src="js/script.js"></script>  
+<script>
+    AOS.init();
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
